@@ -3,6 +3,6 @@ applications:
 - name: spring-music-dev
   #memory: 512M
   instances: 1
-  host: s1p-10-spring-music-dev
+  host: mmcvay-spring-music-dev
   path: build/libs/spring-music.war
   buildpack: java_buildpack_offline

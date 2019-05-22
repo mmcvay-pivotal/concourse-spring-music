@@ -3,5 +3,5 @@ applications:
 - name: spring-music-uat
   #memory: 512M
   instances: 1
-  host: s1p-10-spring-music-uat
+  host: mmcvay-spring-music-uat
   buildpack: java_buildpack_offline
