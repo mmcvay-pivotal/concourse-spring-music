@@ -4,4 +4,4 @@ applications:
   #memory: 512M
   instances: 1
   host: mmcvay-spring-music-test
-  buildpack: java_buildpack_offline
+  #buildpack: java_buildpack_offline

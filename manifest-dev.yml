@@ -5,4 +5,4 @@ applications:
   instances: 1
   host: mmcvay-spring-music-dev
   path: build/libs/spring-music.war
-  buildpack: java_buildpack_offline
+  #buildpack: java_buildpack_offline
