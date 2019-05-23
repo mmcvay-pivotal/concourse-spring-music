@@ -12,12 +12,19 @@
         "title": "Goo",
         "releaseYear": "1991",
         "genre": "Rock"
-    }, 
+    },
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
         "artist": "Pavement",
         "title": "Slanted and Enchanted",
         "releaseYear": "1991",
+        "genre": "Rock"
+    },
+    {
+        "_class": "org.cloudfoundry.samples.music.domain.Album",
+        "artist": "Keane",
+        "title": "Hopes and Fears",
+        "releaseYear": "1994",
         "genre": "Rock"
     },
     {

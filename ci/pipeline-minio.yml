@@ -116,9 +116,9 @@ resources:
 - name: git-repo
   type: git
   source:
-    uri: {{GIT_REPO}}
+    uri: git@github.com:mmcvay-pivotal/concourse-spring-music.git
     branch: master
-    #private_key: {{GIT_PRIVATE_KEY}}
+    private_key: {{GIT_PRIVATE_KEY}}
 
 - name: deploy-test-app
   type: cf
@@ -169,4 +169,14 @@ resources:
     access_key_id: ((MINIO_KEY))
     secret_access_key: ((MINIO_SECRET_KEY))
     disable_ssl: true
-    
+
+
+- name: production-release
+  type: s3
+  source:
+    regexp: spring-music-(.*).war
+    endpoint: ((MINIO_URL))
+    bucket: ((MINIO_BUCKET))
+    access_key_id: ((MINIO_KEY))
+    secret_access_key: ((MINIO_SECRET_KEY))
+    disable_ssl: true
